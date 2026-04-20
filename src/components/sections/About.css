@@ -1,0 +1,114 @@
+.about-visual {
+  position: relative;
+  height: 100%;
+}
+
+.profile-frame {
+  width: 350px;
+  height: 450px;
+  border-radius: 20px;
+  position: relative;
+  padding: 15px;
+}
+
+.profile-image-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: var(--bg-tertiary);
+  position: relative;
+  overflow: hidden;
+  padding: 4px; /* Acts as border width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; /* Inner radius */
+  object-fit: cover;
+  object-position: top;
+  position: relative;
+  z-index: 2;
+}
+
+.gradient-bg::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: conic-gradient(from 0deg, transparent, var(--accent-primary), var(--accent-secondary), transparent 30%);
+  animation: rotate 4s linear infinite;
+  opacity: 1;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  100% { transform: rotate(360deg); }
+}
+
+.floating-badge {
+  position: absolute;
+  padding: 0.75rem 1.25rem;
+  border-radius: 30px;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  animation: float 4s ease-in-out infinite;
+}
+
+.badge-1 {
+  top: -10%;
+  left: -5%;
+  animation-delay: 0s;
+}
+
+.badge-2 {
+  top: -10%;
+  right: -5%;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.story-block {
+  padding: 1.5rem;
+  border-radius: 16px;
+  transition: var(--transition);
+}
+
+.story-block:hover {
+  transform: translateX(10px);
+  border-color: var(--accent-primary);
+}
+
+.story-block h3 {
+  color: var(--accent-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.story-block p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .profile-frame {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 3rem;
+  }
+}

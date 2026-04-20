@@ -1,0 +1,35 @@
+.highlights-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  gap: 2rem;
+}
+
+.stat-value {
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .highlights-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .highlights-container {
+    grid-template-columns: 1fr;
+  }
+}
