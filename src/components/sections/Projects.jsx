@@ -14,17 +14,17 @@ const projectData = [
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop',
     tech: ['React', 'Vite', 'Bootstrap', 'Node.js'],
     github: 'https://github.com/Sameer-11-16',
-    demo: '#',
+    demo: 'https://leave-management-taupe-xi.vercel.app/login',
   },
   {
     id: 2,
     title: 'Crop Disease Detection System',
     description: 'An agricultural platform that assists farmers in identifying crop diseases.',
     longDescription: 'An interactive system designed to modernize agricultural management. It includes dynamic dashboards and tools to diagnose plant health, track weather conditions, and visualize historical data to boost crop yield.',
-    image: 'https://images.unsplash.com/photo-1586771107445-d3af2c4d6232?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=800&auto=format&fit=crop',
     tech: ['React', 'Angular', 'Frontend Integration'],
     github: 'https://github.com/Sameer-11-16',
-    demo: '#',
+    demo: 'https://cropdection.netlify.app/',
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const projectData = [
     image: 'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=800&auto=format&fit=crop',
     tech: ['React', 'Node.js', 'Express', 'MongoDB'],
     github: 'https://github.com/Sameer-11-16',
-    demo: '#',
+    demo: 'https://mohd-faizan.onrender.com/login',
   }
 ];
 
